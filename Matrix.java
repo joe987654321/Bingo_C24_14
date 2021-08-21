@@ -24,7 +24,6 @@ public class Matrix {
 
             for (int i = 0; i < 24; i++) {
                 grids[i].rnd = Math.random();
-                grids[i].selected = false;
             }
             Arrays.sort(grids, (grid1, grid2) -> {
                 if (grid1.rnd > grid2.rnd) {
@@ -70,7 +69,6 @@ public class Matrix {
 
     public static class Grid {
         public int value;
-        public boolean selected = false;
         public double rnd;
     }
 }
